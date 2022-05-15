@@ -214,6 +214,9 @@ nav li{
     font-weight: 480;
     
 }
+#navbar-toggler-icon{
+    color:  white;
+}
 #btn-subscribe{
     font-size: 22px;
     font-weight: 600;
@@ -230,26 +233,34 @@ nav li{
 footer{
     color:white;
     background-color: black;
-    margin: 0;
+    /*margin: 0;*/
     padding: 20px;
 }
 #footer-p{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 #privacy{
     color: #0d0;
     font-size: 20px;
     border-bottom: 1px solid #0d0;
+    margin-left: -15%;
+    margin-top: -10%;
 }
 #footer-i{
-    width: 2%;
     color: white;
-    padding: 10px;
+    padding: 13px;
+}
+.col-3text-center{
+    margin-left: 10%;
+}
+.col-6text-center{
+    margin-left: 10%;
 }
 #footer-i:hover{
     opacity: 0.4;
 }
+
 
 
 
@@ -268,5 +279,15 @@ footer{
     .col-12 .stra-item{
         width: 100%;
         margin-top: 10%;
+    }
+    #privacy{
+        margin-top: -10%;
+        margin-left: -5%;
+    }
+    .col-3text-center{
+        margin-left: 55%;
+    }
+    .col-6text-center{
+        margin-left: 1%;
     }
 }
