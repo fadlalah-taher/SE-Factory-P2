@@ -21,9 +21,10 @@
     <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href=""><img id="logo" src="assets/se-logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <!--<button class="navbar-togggler" type="button" data-toggle="coollapse" data-target="#navbarResponsive">
+                    <span id="span-icon" class="navbar-toggler-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                     <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
-                </button>
+                </button>-->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item color">
@@ -50,10 +51,22 @@
                         
                         <li>
                             <button type="button" id="btn" class="btn btn-primary bt">Apply Now</button>
-
                         </li>
-                        
-                    </ul>
+                    </ul> 
+                </div>
+                <span id="span-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <div id="myNav"  class="overlay">
+                    <img id="logo" src="assets/se-logo.png" alt="logo">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#">Home</a>
+                        <a href="#">Get Trained</a>
+                        <a href="#">Hire talent</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Blog</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                    </div>
                 </div>
             </div>
     </nav>
@@ -87,7 +100,7 @@
             <h3>145+</h3>
             <p>Global Recruitment</p>
             <p>Partner Companies</p>
-            <hr>
+            <hr id="space-btm">
           </div>
         </div>
       </div>
@@ -249,6 +262,16 @@
         </div>
       </div>
 </footer>
+ 
+
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
     
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
 </body>
 </html>
